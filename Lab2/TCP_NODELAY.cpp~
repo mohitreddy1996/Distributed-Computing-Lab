@@ -1,0 +1,11 @@
+/*
+ * Nagle's algorithm: Means to improve efficiency of TCP/IP networks by reducing
+ * the number of packets that need to be sent over the network. 
+ * Application repeatedly emits data in small chunks causing huge overhead. 
+ * Nagle's algorithm works by combining a number of small outgoing messages 
+ * and sending them all at once. Specifically, as long as there is a sent 
+ * packet for which the sender has received an ack, the sender should keep
+ * buffering its output until it has a full packet's worth of output, 
+ * thus allowing output to be sent all at once.
+ */
+
